@@ -22,11 +22,11 @@ const App: FC = () => {
     setTask("");
     setDealine(0);
   };
-
+  
   const completeTask = (taskNameToDelete: string): void => {
     setTodoList(
       todoList.filter((task) => {
-        return task.taskName != taskNameToDelete;
+        return task.taskName !== taskNameToDelete;
       })
     );
   };
